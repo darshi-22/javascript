@@ -19,3 +19,29 @@ function login(name){
     console.log(`Username is:`,name);
 }
 login("DARSHI")
+
+/**********************************************************************/
+
+//REST OPERATOR 
+function calPrice(...num)
+{
+    return num;
+}
+console.log(calPrice(100,200,300))
+
+//Object in function
+const user={
+    uname:"DARSHI",
+    price:199
+}
+function handleObj(anyObj){
+    console.log(`Username is ${anyObj.uname} and price is ${anyObj.price}`);
+}
+handleObj(user)
+
+//Array in function
+const myArray=[10,20,20]
+function retValue(getArray){
+    return getArray[1]
+}
+console.log(retValue(myArray));
